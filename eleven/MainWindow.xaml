@@ -1,0 +1,18 @@
+﻿<Window x:Class="eleven.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:eleven"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="25,-7,25,46">
+            <Label Content="{Binding UserInput}" Width="200" Height="59" x:Name="labell" Margin="500,58,0,0"/>
+            <TextBox Text="{Binding UserInput, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="textt" Width="200" Height="61" TextChanged="textt_TextChanged"/>
+            <Button Content="очистка поля" Height="85" Width="100" Margin="-500,50,0,0" Click="Button_Click_1" />
+
+        </StackPanel>
+
+    </Grid>
+</Window>
